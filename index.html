@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shodagor Express</title>
+    <link rel="shortcut icon" href="images/shodagorLogo.ico" type="image/x-icon">
+    <!-- Bossrap Cdn -->
+    <!-- Daisy And Tailwin Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Css Link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font-awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header-section  top-0 fixed w-full z-50">
+        <div class="navbar  lg:flex justify-between lg:justify-center lg:items-center ">
+            <div class="flex justify-start">
+                <a class="text-xl cursor-pointer relative  lg:mr-96"><img class="w-32" src="images/ShodagorLogo.png"
+                        alt=""></a> 
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 z-30">
+                    <li><a class="hover:bg-green-400 font-semibold  text-rose-950">Home</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="serviceArea.html">Service Area</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="ContactUS.html">Contact Us</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="Traking.html"> Tracking </a></li>
+                    <button class="btn bg-purple-600 text-white">Loging</button>  
+                </ul>
+                <span class="loading loading-ball text-purple-700 loading-lg ml-"></span>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" style="margin:none;"
+                    class="menu menu-sm dropdown-content mt-3 z-[1]  pr-10 md:pr-5 shadow bg-base-100 rounded-box w-40 lg:w-52">
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600 "  href="index.html">Home</a></li>
+                    <li><a class="hover:bg-green-400 font-semibold   text-neutral-600" href="serviceArea.html">Service Area</a></li>
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600" href="ContactUS.html">Contact Us</a></li>
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600" href="Traking.html"> Tracking </a></li>
+                </ul>
+            </div>
+        </div>
+     
+    </header>
+    <!-- banner -->
+    <section class="Banner-section mt-20 z-0">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <img src="images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Transted -->
+    <main class="section-main">
+        <!-- Section Transted -->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl font-sans font-bold text-neutral-600">Why You Trust us </h1>
+            <div class="flex flex-col-reverse lg:flex-row p-5 gap-10">
+                <div class="flex-1">
+                    <h2 class="text-4xl font-bold text-emerald-500 p-0 ">One of the Biggest courier <br>
+                    </h2>
+                    <p class="mt-5 mb-5">We deliver your products safely to
+                        your home in Exercitationem laboriosam facilis id iste ab velit sunt dolore odio, a non ipsa
+                        unde ullam dolorum quibusdam officia magni!
+                    </p>
+                    <button class="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">Get Our
+                        services</button>
+                </div>
+
+                <div class="flex-1">
+                    <img class="w-full rounded-lg" src="images/company.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl font-sans font-bold text-neutral-600">Our Services 
+            </h1>
+            <div class="grid grid-cols-1  lg:grid-cols-3 lg:flex-row p-5 gap-10 space-y-3">
+                <div
+                    class="card w-80 hover:w-96 transition-transform  cursor-pointer  bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]  rounded-r-full  shadow-md text-neutral-content">
+                    <div class="card-body items-center text-center text-white ">
+                        <h2 class="card-title"><i class="fa-solid fa-file-invoice text-5xl"></i></h2>
+                        <p>Document Service</p>
+                        <!-- <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div
+                    class="card w-80 hover:w-96 transition-transform  cursor-pointer   bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]   rounded-r-full   shadow-md text-neutral-content">
+                    <div class="card-body items-center text-white  text-center">
+                        <h2 class="card-title"><i class="fa-solid fa-box text-5xl text-amber-400"></i></h2>
+                        <p>Parcel Service</p>
+                        <!-- <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div
+                    class="card w-80 hover:w-96 transition-transform  cursor-pointer   bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]   rounded-r-full  shadow-md text-neutral-content">
+                    <div class="card-body items-center text-white text-center">
+                        <h2 class="card-title"><i class="fa-solid fa-lemon text-green-500 text-5xl "></i></h2>
+                        <p>Fruits Service </p>
+                        <!-- <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div
+                    class="card w-80 hover:w-96 transition-transform  cursor-pointer  bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]  rounded-r-full   shadow-md text-neutral-content">
+                    <div class="card-body items-center text-white  text-center">
+                        <h2 class="border-red"><i class="fa-solid fa-money-bill text-5xl text-white "></i></h2>
+                        <p> Topay and Condition Service</p>
+                        <!-- <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Accept</button>
+                                <button class="btn btn-ghost">Deny</button>
+                            </div> -->
+                    </div>
+                </div>
+                <div
+                    class="card w-80 hover:w-96 transition-transform  cursor-pointer bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]  rounded-r-full   shadow-md text-neutral-content">
+                    <div class="card-body items-center text-white  text-center">
+                        <h2 class="card-title"> <i class="fa-solid fa-weight-hanging text-5xl text-sky-400 "></i></h2>
+                        <p>Poly Services</p>
+                        <!-- <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="card w-80 hover:w-96 transition-transform cursor-pointer bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92]  rounded-r-full   shadow-md text-neutral-content">
+                    <div class="card-body items-center text-white  text-center">
+                        <h2 class="card-title"><i class="fa-solid fa-house-chimney  text-5xl"></i></h2>
+                        <p>Home Delivery Service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl font-sans font-bold text-neutral-600">Recent Activity   </h1>
+            <div class="flex flex-col-reverse lg:flex-row p-5 gap-10">
+                <div class="flex-1">
+                    <h2 class="text-4xl font-bold text-emerald-500 p-0 ">One of the Biggest courier <br>
+                    </h2>
+                    <p class="mt-5 mb-5">We deliver your products safely to
+                        your home in Exercitationem laboriosam facilis id iste ab velit sunt dolore odio, a non ipsa
+                        unde ullam dolorum quibusdam officia magni!
+                    </p>
+                    <button class="btn bg-gradient-to-r from-[#d9138a] via-[ #077b8a] to-[#5c3c92] text-white">Get Our
+                        services</button>
+                </div>
+
+                <div class="flex-1">
+                    <img class="w-1/2" src="images/delivery.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- section  Branch Agency-->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl font-sans font-bold text-neutral-600">Our Branch       
+            <div class="counter flex flex-col-reverse lg:flex-row p-5 gap-5">
+                <h1 class="text-center flex-1 bg-base-100"><span
+                        class="text-center text-2xl font-semibold ">Branch</span>
+                    <div class="card-body text-center text-xl font-semibold text-purple-600  w-96 bg-base-100 rounded-lg shadow-xl"
+                        data-count="100">
+                        0
+                    </div>
+                </h1>
+                <h1 class="text-center flex-1"><span class="text-center text-2xl font-semibold ">Agency</span>
+                    <div class="card-body text-center  text-xl font-semibold text-purple-600 w-96 bg-base-100 rounded-lg shadow-xl"
+                        data-count="100">
+                        0
+                    </div>
+                </h1>
+            </div>
+        </section>
+        <!-- Section Our Process -->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl  font-sans font-bold text-neutral-600">Our Process</h1>
+            <div class="flex flex-col lg:flex-row gap-10 items-center justify-center rounded p-14 ">
+                <div class="flex-1 ">
+                    <img src="images/Process/Booking.png" class="w-max" alt="">
+                    <ul class="timeline">
+                        <li>
+                            <hr class="bg-orange-400" />
+                            <div class="timeline-middle text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box">Booking</div>
+                            <hr />
+                        </li>
+                    </ul>
+                    <h2 class="text-center font-sans text-2xl font-semibold text-cyan-800"></h2>
+
+                </div>
+                <!-- <i class="fa-solid fa-arrow-right hidden lg:block text-4xl font-semibold "></i> -->
+                <div class="flex-1 space-y-3">
+                    <img src="images/Process/Boxing.png" class="w-max" alt="">
+                    <ul class="timeline">
+                        <li>
+                            <hr class="bg-orange-400" />
+                            <div class="timeline-middle text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box">Packing</div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+                <!-- <i class="fa-solid fa-arrow-right hidden lg:block text-4xl font-semibold text-purple-600"></i> -->
+                <div class="flex-1 mt-20 space-y-3">
+                    <img width="1000px" src="images/Process/logistic2.png" class="w-full" alt="">
+                    <ul class="timeline pt-5">
+                        <li>
+                            <hr class="bg-orange-400" />
+                            <div class="timeline-middle text-green-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box">Transport</div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+                <!-- <i class="fa-solid fa-arrow-right hidden lg:block text-4xl font-semibold "></i> -->
+                <div class="flex-1 space-y-3">
+                    <img src="images/Process/DeliveryCounter2.png " class="w-max mb-5" alt="">
+                    <ul class="timeline pt-5">
+                        <li>
+                            <hr class="bg-orange-400" />
+                            <div class="timeline-middle text-green-600 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box">Counter</div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-freqienly-ask-questuion -->
+        <section class="sec-Transted mt-20">
+            <h1 class="text-center mb-20 text-5xl font-sans font-bold text-neutral-600">Free Quently Ask </h1>
+            <div class="flex flex-col lg:flex-row  gap-5">
+                <div class="flex-1">
+                    <img src="images/freequently.png" class="w-3/4" alt="">
+                </div>
+                <div class="flex-1 space-y-3">
+                    <div class="collapse collapse-plus bg-base-200 p-3">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            আপনাদের ডেলিভারি টাইম লাইন ?
+                        </div>
+                        <div class="collapse-content">
+                            <p>১ থেকে সর্বোচ্চ ৩ দিনের মধ্যে স্থান ভেদে আমরা ডেলিভারি দিয়ে থাকি ।</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            আপনাদের বুকিং কয়টা পর্যন্ত নেওয়া হয় ?
+                        </div>
+                        <div class="collapse-content">
+                            <p>আমাদের বুকিং সকাল ৯টা থেকে রাত ৮টা পর্যন্ত নেওয়া হয় ।</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            আপনাদের সাথে কিভাবে যোগাযোগ করবো ?
+                        </div>
+                        <div class="collapse-content">
+                            <p>অনুগ্রহ করে আমাদের কাস্টোমার কেয়ারে ফোন দিয়ে যোগাযোগ করুন (সকাল ১০ টা থেকে রাত ৭ টা)</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            কি কি পণ্য পাঠানো যাবে না ?
+                        </div>
+                        <div class="collapse-content">
+                            <p>এসিড, মাদকদ্রব্য, অবৈধ পণ্য, বিস্ফোরক জাতীয় দ্রব্য, পচনশীল দ্রব্য এবং সরকার ঘোষিত যেকোনো
+                                ধরণের নিষিদ্ধ পণ্য</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-20 font-sans ">
+        <div
+            class="flex p-10 lg:p-20 flex-col-reverse lg:flex-row gap-10  bg-base-200 text-base-content justify-center items-center">
+            <div class="text-center cursor-pointer">
+                <img src="images/ShodagorLogo.png" alt="" class="w-40">
+                <p>Shodagor Express ltd</p>
+                <p>Designed & Development by SEL</p>
+            </div>
+            <div class="grid grid-cols-2 gap-5 lg:gap-36">
+                <div>
+                    <h6 class="footer-title">Quick Access</h6>
+                    <ul class="block">
+                        <li class="space-x-2"><a
+                                class="link  no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px]">About
+                                Us</a></li>
+                        <li><a class="link no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Services
+                                Area</a></li>
+                        <li><a
+                                class="link  no-underline hover:text-porange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Tracking</a>
+                        </li>
+                        <li><a class="link  no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Recent
+                                Act</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-title">Our Location</h6>
+                    <ul class="block">
+                        <li class="lg:mb-1"><i class="fa-solid fa-location-dot text-red-500 mb-3 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-1   text-[10px] lg:text-[15px] ">Keraniganj,
+                                Dhaka-1312</span></a></li>
+                        <li class="lg:mb-1"><i class="fa-solid fa-envelope   mb-3  text-amber-300 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-[.5px]  text-[8px] lg:text-[15px]">info@shodagorexpress.net</a>
+                        </li>
+                        <li class="lg:mb-1"><i class="fa-solid fa-phone  text-purple-700 mb-3 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-1  text-[10px] lg:text-[15px]">09639-333888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-center bg-purple-950 text-white p-4 bg-base-300 text-base-content">
+            <aside>
+                <p>Copyright © 2024 - All right reserved by Shodagor Express Ltd.</p>
+            </aside>
+        </footer>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = this.document.querySelector("header");
+            header.classList.toggle("stricky", window.scrollY > 0);
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var winHeight = $(window).height(),
+                eleOffsetTop = $(".counter").offset().top,
+                eleTop = eleOffsetTop - winHeight,
+                current = 0;
+
+            $(window).on("scroll", function () {
+                var scrollTop = $(window).scrollTop();
+
+                if (current == 0 && scrollTop >= eleTop) {
+                    $('.counter div').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+
+                        $({ countNum: $this.text() }).animate({
+                            countNum: countTo
+                        },
+                            {
+                                duration: 2000,
+                                easing: 'linear',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                    //alert('finished');
+
+                                    //this inside the step callback isn't the element but the object passed to animate
+                                }
+                            });
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <!-- {{-- conuterUp cdn --}} -->
+    <script src="https://code.jquery.com/jquery-1.12.1.js"
+        integrity="sha256-VuhDpmsr9xiKwvTIHfYWCIQ84US9WqZsLfR4P7qF6O8" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>

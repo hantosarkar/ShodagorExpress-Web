@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shodagor Express</title>
+    <link rel="shortcut icon" href="images/shodagorLogo.ico" type="image/x-icon">
+    <!-- Bossrap Cdn -->
+    <!-- Daisy And Tailwin Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Css Link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font-awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header-section  top-0 fixed w-full z-50">
+        <div class="navbar  lg:flex justify-between lg:justify-center lg:items-center ">
+            <div class="flex justify-start">
+                <a class="text-xl cursor-pointer relative  lg:mr-96"><img class="w-32" src="images/ShodagorLogo.png"
+                        alt=""></a> 
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 z-30">
+                    <li><a class="hover:bg-green-400 font-semibold  text-rose-950" href="index.html">Home</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="serviceArea.html">Service Area</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="ContactUS.html">Contact Us</a></li>
+                    <li><a class="text-neutral-600 font-semibold" href="Traking.html"> Tracking </a></li>
+                    <button class="btn bg-purple-600 text-white">Loging</button>  
+                </ul>
+                <span class="loading loading-ball text-purple-700 loading-lg ml-"></span>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" style="margin:none;"
+                    class="menu menu-sm dropdown-content mt-3 z-[1]  pr-10 md:pr-5 shadow bg-base-100 rounded-box w-40 lg:w-52">
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600 "  href="index.html">Home</a></li>
+                    <li><a class="hover:bg-green-400 font-semibold   text-neutral-600" href="serviceArea.html">Service Area</a></li>
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600" href="ContactUS.html">Contact Us</a></li>
+                    <li><a class="hover:bg-green-400  font-semibold  text-neutral-600" href="Traking.html"> Tracking </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Transted -->
+    <main class="section-main mt-32">
+             
+        <iframe id="mmmm" class="w-full mt-10 "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.106676046768!2d90.33652468030583!3d23.743575044289646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf551b618237%3A0xe62f7ee5105d1771!2sShodagor%20Express%20Limited-H%2FO!5e0!3m2!1sen!2sbd!4v1707557623718!5m2!1sen!2sbd" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--Section  Contact US  -->
+         <section class="mt-32">
+                      <div class="flex flex-col  lg:flex-row gap-10">
+                        <div class="card w-96 bg-[#452c63] text-primary-content">
+                            <div class="card-body">
+                              <h2 class="text-center"><i class="fa-solid fa-phone-volume text-white text-3xl pb-3"></i></h2>
+                              <p class="font-bold">Contact Number</p>
+                              <p class="mb-3">+88-0963-333888</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn  bg-purple-900 text-white hover:text-orange-700">Call Now </button>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="card w-96 bg-[#452c63] text-primary-content">
+                            <div class="card-body">
+                              <h2 class="text-center"><i class="fa-solid fa-location-dot text-white text-3xl pb-3"></i></h2>
+                               <h1 class=" text-center font-bold"><p>Our Location</p></h1>
+                              <p class="text-center mb-5">Washpur (Near to Bosila Bridge) Keraniganj, Dhaka-1312</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn  bg-purple-900 text-white hover:text-orange-700"><a href="#mmmm">Visite Location</a> </button>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="card w-96 bg-[#452c63] text-primary-content">
+                            <div class="card-body">
+                              <h2 class="text-center"><i class="fa-regular fa-envelope text-3xl text-white pb-3"></i></h2>
+                               <h2 class="text-center font-bold"><p>Contact Mail</p></h2>
+                              <p class="mb-3">info@shodagorexpress.net</p>
+                              <div class="card-actions justify-end">
+                                <button class="btn bg-purple-900 text-white hover:text-orange-700">Email</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+         </section>
+    </main>
+    <footer class="mt-20 font-sans ">
+        <div
+            class="flex p-10 lg:p-20 flex-col-reverse lg:flex-row gap-10  bg-base-200 text-base-content justify-center items-center">
+            <div class="text-center cursor-pointer">
+                <img src="images/ShodagorLogo.png" alt="" class="w-40">
+                <p>Shodagor Express ltd</p>
+                <p>Designed & Development by SEL</p>
+            </div>
+            <div class="grid grid-cols-2 gap-5 lg:gap-36">
+                <div>
+                    <h6 class="footer-title">Quick Access</h6>
+                    <ul class="block">
+                        <li class="space-x-2"><a
+                                class="link  no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px]">About
+                                Us</a></li>
+                        <li><a class="link no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Services
+                                Area</a></li>
+                        <li><a
+                                class="link  no-underline hover:text-porange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Tracking</a>
+                        </li>
+                        <li><a class="link  no-underline hover:text-orange-300 hover:ml-1 text-[10px] lg:text-[15px] ">Recent
+                                Act</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-title">Our Location</h6>
+                    <ul class="block">
+                        <li class="lg:mb-1"><i class="fa-solid fa-location-dot text-red-500 mb-3 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-1   text-[10px] lg:text-[15px] ">Keraniganj,
+                                Dhaka-1312</span></a></li>
+                        <li class="lg:mb-1"><i class="fa-solid fa-envelope   mb-3  text-amber-300 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-[.5px]  text-[8px] lg:text-[15px]">info@shodagorexpress.net</a>
+                        </li>
+                        <li class="lg:mb-1"><i class="fa-solid fa-phone  text-purple-700 mb-3 pr-1 lg:pr-5"></i><a
+                                class="link no-underline hover:text-orange-300 hover:ml-1  text-[10px] lg:text-[15px]">09639-333888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-center bg-purple-950 text-white p-4 bg-base-300 text-base-content">
+            <aside>
+                <p>Copyright © 2024 - All right reserved by Shodagor Express Ltd.</p>
+            </aside>
+        </footer>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = this.document.querySelector("header");
+            header.classList.toggle("stricky", window.scrollY > 0);
+        });
+
+    </script>
+
+    <!-- {{-- conuterUp cdn --}} -->
+    <script src="https://code.jquery.com/jquery-1.12.1.js"
+        integrity="sha256-VuhDpmsr9xiKwvTIHfYWCIQ84US9WqZsLfR4P7qF6O8" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>
